@@ -37,6 +37,7 @@ namespace MyClipBoard_Frm
             m_lstImage.Add(img);
             FitImage(img);
             this.Invalidate();
+            MainFrm.Base64Form.SetPicture(img);
         }
         public void RemoveLastPicture()
         {
